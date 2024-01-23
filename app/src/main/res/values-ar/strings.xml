@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اكزاماك</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="email">الايميل</string>
+    <string name="password">الباسورد</string>
+    <string name="user_name">الاسم</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="confirm_password">تأكيد الباسورد</string>
+    <string name="signup">انشاء حساب</string>
+    <string name="hello_blank_fragment">مرحبا</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">الرسائل</string>
+    <string name="sync_header">المزامنة</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">توقيعك</string>
+    <string name="reply_title">اجراء الرد الافتراضي</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">مزامنة الايميل دوريا</string>
+    <string name="attachment_title">تنزيل المرفقات الواردة</string>
+    <string name="attachment_summary_on">تنزيل المرفقات تلقائيا لرسائل الايميل الواردة
+    </string>
+    <string name="attachment_summary_off">تنزيل المرفقات عند الطلب يدويا فقط</string>
+    <string name="Exam">الامتحان</string>
+    <string name="Settings">الاعدادات</string>
+    <string name="title_activity_settings_student">الاعدادات</string>
+    <string name="Home">الرئيسية</string>
+    <string name="examac">اكزاماك</string>
+    <string name="grading_short_answer_questions">تصحيح الاسئلة المقالية يدويا</string>
+    <string name="using_deep_learning_and_nlp">باستخدام التعلم العميق</string>
+    <string name="regester">انشاء حساب</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="welcome_to_examac">مرحبا في اكزاماك!</string>
+    <string name="are_you_have_account">هل لديك حساب?</string>
+    <string name="welcome_back_to_examac">مرحبا بعودتك!</string>
+    <string name="login_to_enter_your_account">سجل الدخول للوصول لحسابك</string>
+    <string name="sign_in">سجل الدخول</string>
+    <string name="don_t_have_account">ليس لديك حساب?</string>
+    <string name="forget_password">هل نسيت الباسورد?</string>
+    <string name="questions">الاسئلة</string>
+    <string name="answers">الاجابات</string>
+    <string name="add_questions">اضافة سؤال</string>
+    <string name="old_exams">الامتحانات القديمة</string>
+    <string name="find_your_exam">اعثر علي امتحانك</string>
+    <string name="enter_exam_id">ادخل كود الامتحان</string>
+    <string name="enter_exam_date">ادخل تاريخ الامتحان</string>
+    <string name="access">وصول</string>
+    <string name="upload_your_exam">ارفع امتحانك</string>
+    <string name="exam_name">اسم الامتحان</string>
+    <string name="create">انشاء</string>
+    <string name="upload">رفع</string>
+    <string name="show_exam">عرض الامتحان</string>
+    <string name="choose_exam">اختر امتحان</string>
+    <string name="your_exam">امتحانك</string>
+    <string name="save">حفظ</string>
+    <string name="upload_exam">رفع الامتحان</string>
+    <string name="create_exam">انشاء امتحان</string>
+    <string name="find_exam">اوجد الامتحان</string>
+    <string name="student">الطالب</string>
+    <string name="backbtnpress">اضغط مجددا للعودة</string>
+    <string name="teacher">المدرس</string>
+    <string name="task_cancelled" >الغاء المهمة</string>
+    <string name="faildtoload"> فشل تحميل وحدة ديناميت الرؤية الموقوفة </string>
+</resources>

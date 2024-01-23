@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@color/scolor"
+    android:backgroundTint="@color/scolor"
+    app:cardElevation="4dp">
+    <LinearLayout
+        android:id="@+id/showexamquestionsforteacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/showquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questions"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/showanswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answers"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

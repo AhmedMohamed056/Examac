@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_upload"
+        android:name="com.cis.itiapi.FragmentG"
+        android:label="@string/create_exam"
+        tools:layout="@layout/fragment_g" >
+        <action
+            android:id="@+id/action_navigation_upload_to_createExamFragment"
+            app:destination="@id/createExamFragment" />
+        <action
+            android:id="@+id/action_navigation_upload_to_fragmentUploadExam"
+            app:destination="@id/fragmentUploadExam" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.cis.itiapi.FragmentH"
+        android:label="@string/Home"
+        tools:layout="@layout/fragment_h" >
+        <action
+            android:id="@+id/action_navigation_home_to_settingsFragmentteacher"
+            app:destination="@id/settingsFragmentteacher" />
+        <action
+            android:id="@+id/action_navigation_home_to_showoldexamteacherFragment"
+            app:destination="@id/showoldexamteacherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_exam"
+        android:name="com.cis.itiapi.showexamFragmentforTeacher"
+        android:label="@string/find_exam"
+        tools:layout="@layout/fragment_showexam_fragmentfor_teacher" >
+        <action
+            android:id="@+id/action_navigation_exam_to_showQuistionsFragmentteacher"
+            app:destination="@id/showQuistionsFragmentteacher" />
+    </fragment>
+    <fragment
+        android:id="@+id/showQuistionsFragmentteacher"
+        android:name="com.cis.itiapi.showQuistionsFragmentteacher"
+        android:label="@string/questions"
+        tools:layout="@layout/fragment_show_quistions_fragmentteacher" >
+        <action
+            android:id="@+id/action_showQuistionsFragmentteacher_to_navigation_exam"
+            app:destination="@id/navigation_exam" />
+    </fragment>
+    <fragment
+        android:id="@+id/createExamFragment"
+        android:name="com.cis.itiapi.CreateExamFragment"
+        android:label="@string/create_exam"
+        tools:layout="@layout/fragment_create_exam" >
+        <action
+            android:id="@+id/action_createExamFragment_to_navigation_upload"
+            app:destination="@id/navigation_upload" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUploadExam"
+        android:name="com.cis.itiapi.FragmentUploadExam"
+        android:label="@string/upload_exam"
+        tools:layout="@layout/fragment_upload_exam" >
+        <action
+            android:id="@+id/action_fragmentUploadExam_to_navigation_upload"
+            app:destination="@id/navigation_upload" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragmentteacher"
+        android:name="com.cis.itiapi.settingsFragmentteacher"
+        android:label="@string/Settings"
+        tools:layout="@layout/fragment_settings_fragmentteacher" >
+        <action
+            android:id="@+id/action_settingsFragmentteacher_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/showoldexamteacherFragment"
+        android:name="com.cis.itiapi.showoldexamteacherFragment"
+        android:label="@string/Exam"
+        tools:layout="@layout/fragment_showoldexamteacher" >
+        <action
+            android:id="@+id/action_showoldexamteacherFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>

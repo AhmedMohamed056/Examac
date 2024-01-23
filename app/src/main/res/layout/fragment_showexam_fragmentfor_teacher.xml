@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/teacherexamfragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".showexamFragmentforTeacher">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/loginde"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_baseline_find_in_page_24"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/scolor"
+        android:fontFamily="@font/archivo_black"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/update_your_exam" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        android:maxEms="1"
+        app:boxStrokeColor="@color/purple_500"
+        app:hintTextColor="@color/purple_500"
+        app:startIconTint="@color/purple_500"
+        app:startIconDrawable="@drawable/ic_baseline_switch_access_shortcut_24"
+        android:hint="@string/enter_exam_id"
+        android:paddingHorizontal="5dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterexamid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        android:maxEms="1"
+        app:boxStrokeColor="@color/purple_500"
+        app:hintTextColor="@color/purple_500"
+        app:startIconTint="@color/purple_500"
+        app:startIconDrawable="@drawable/date_range_icon"
+        android:hint="@string/enter_exam_date"
+        android:paddingHorizontal="5dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="320dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterexamDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/accessexamteacherbtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_splashde"
+        android:text="@string/access"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp"
+        app:backgroundTint="@color/purple_500"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="390dp"/>
+
+</FrameLayout>

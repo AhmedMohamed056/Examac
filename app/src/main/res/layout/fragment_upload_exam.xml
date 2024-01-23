@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentuploadexam"
+    android:background="@color/white"
+    tools:context=".FragmentUploadExam">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/upload_exam_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="@string/upload_exam"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/takeexamimgbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_splashde"
+        android:textSize="30sp"
+        android:text="@string/choose_exam"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/archivo_black"
+        android:paddingHorizontal="15dp"
+        android:layout_marginHorizontal="20dp"
+        app:drawableStartCompat="@drawable/ic_baseline_document_scanner_24" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/textrecognationbtn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="300dp"-->
+    <!--        android:text="text recognation"/>-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:scrollbarStyle="insideInset">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxStrokeColor="@color/purple_700"
+                    app:hintTextColor="@color/purple_700"
+                    app:startIconTint="@color/purple_700"
+                    android:paddingHorizontal="15dp"
+                    android:hint="@string/your_exam"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:lines="15"
+                        android:gravity="top"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollHorizontally="false"
+                        android:id="@+id/showtxt"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/saveexambtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textSize="20sp"
+                android:layout_marginTop="470dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_splashde"
+                app:backgroundTint="@color/purple_500"
+                />
+
+
+
+
+</FrameLayout>

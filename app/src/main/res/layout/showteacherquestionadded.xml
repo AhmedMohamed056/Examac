@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="4dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/scolor"
+            android:backgroundTint="@color/scolor">
+            <TextView
+                android:id="@+id/showquestions"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/questions"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/deleteexam"
+                app:layout_constraintBottom_toTopOf="@+id/showanswers"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:id="@+id/showanswers"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/answers"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/showquestions"
+                app:layout_constraintEnd_toStartOf="@+id/deleteexam"
+                android:layout_margin="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/deleteexam"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:src="@drawable/baseline_delete_24"
+                android:layout_gravity="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="8dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
