@@ -8,3 +8,7 @@
 
 
 ## Technologies: Used Retrofit2, Coroutines, and third-party libraries MLKIT-OCR for text recognition.
+
+
+https://github.com/user-attachments/assets/8511a26f-6fb4-409c-a3ba-37ab60929973
+
